@@ -1,68 +1,92 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
-</head>
-
-<body>
-  <header class="main-header">
-    <a class="main-header-logo" href="#">
-      <img src="img/main-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
-    </a>
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="inner.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="cart">
-      <a class="cart-link" href="#">Корзина</a>
-    </div>
-  </header>
-  <main class="conteiner">
-    <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
-    <section class="services">
-      <h2 class="visually-hidden">Услуги</h2>
-      <ul class="services-list">
-        <li class="services-item">
-          <img src="img/illustration-1.png" width="300" height="145" alt="Картинка ноутбук">
-          <h3 class="service-item-title">Веб-сайты</h3>
-          <p class="service-item-promo">Мир никогда не будет прежним после того как увидит ваш сайт!
-            <a class="button button-services services-item-web"></a>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="main-header-logo" href="#">
+        <img src="img/main-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
+      </a>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="inner.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+       <a class="cart-link" href="#">Корзина</a>
+      </div>
+    </header>
+    <main class="conteiner">
+      <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
+      <section class="services">
+        <h2 class="visually-hidden">Услуги</h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <img src="img/illustration-1.png" width="300" height="145" alt="Картинка ноутбук">
+            <h3 class="service-item-title">Веб-сайты</h3>
+            <p class="service-item-promo">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button button-services services-item-web" href="#">Заказать</a>
+          </li>
+          <li class="services-item">
+            <img src="img/illustration-2.png" width="300" height="145" alt="Картинка телефоны">
+            <h3 class="service-item-title">Приложения</h3>
+            <p class="service-item-promo">Покорите топ-10 приложений в Appstore и Google Play</p>
+          <a class="button button-services services-item-app" href="#">Заказать</a>
+          </li>
+          <li class="services-item">
+            <img src="img/illustration-3.png" width="300" height="145" alt="Картинка график">
+            <h3 class="service-item-title">Презентации</h3>
+            <p class="service-item-promo">Вы даже не подозревете, насколько вы изумительны</p>
+            <a class="button button-services services-item-presentetion" href="#">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <section class="modal modal-contacts-info">
+        <h3 class="visually-hidden">Контактная информация</h3>
+        <p>
+          <b>Nёrds design studio</b>
+        </p>
+        <p>
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8<br>
+        </p>
+        <p>
+            тел. +7(812) 275-75-75
+        </p>
+        <button type="button" name="button button-contacts-info">Напишите нам</button>
+        <form class="modal-write-to-us" action="index.html" method="post">
+          <p>
+            <label for="user-name">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="user-name">
           </p>
-        </li>
-        <li class="services-item">
-          <img src="img/illustration-2.png" width="300" height="145" alt="Картинка телефоны">
-          <h3 class="service-item-title">Приложения</h3>
-          <p class="service-item-promo">Покорите топ-10 приложений в Appstore и Google Play
-            <a class="button button-services services-item-app"></a>
+          <p>
+            <label for="user-e-mail">Ваш e-mail:</label>
+            <input type="text" name="e-mail" placeholder="Для отправки ответа" id="user-e-mail">
           </p>
-        </li>
-        <li class="services-item">
-          <img src="img/illustration-3.png" width="300" height="145" alt="Картинка график">
-          <h3 class="service-item-title">Презентации</h3>
-          <p class="service-item-promo">Вы даже не подозревете, насколько вы изумительны
-            <a class="button button-services services-item-presentetion"></a>
+          <p>
+            <label for="user-message">Текст письма:</label>
+            <input type="text" name="message" placeholder="В свободной форме" id="user-message">
           </p>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer class="main-footer">
-    <div class="social-footer">
-      <ul>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграмм</a></li>
-      </ul>
-    </div>
-    <b>Давайте дружить, это выгодно</b>
-    <p>Скидка 10% для друзей из социальных сетей</p>
-  </footer>
-</body>
-
+          <button type="submit" name="button button-write-to-us">Отправить</button>
+        </form>
+        <button class="modal-close">Отмена</button>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="social-footer">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграмм</a></li>
+        </ul>
+      </div>
+      <b>Давайте дружить, это выгодно</b>
+      <p>Скидка 10% для друзей из социальных сетей</p>
+    </footer>
+  </body>
 </html>
