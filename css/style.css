@@ -1,0 +1,136 @@
+body {
+     
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight:regular; 
+    color:#000000; 
+
+    background-color: #ffffff;    
+}
+a {
+    text-decoration: none;
+}
+.main-header {
+    background-color:#eeeeee;
+}
+.header-logo img {
+    opacity: 0;
+}
+a.header-logo {
+    
+    background-image: url("../img/nerds-logo.png");
+}
+a.header-logo:focus {
+    background-image: url("../img/nerds-logo-focus.png");
+}
+a.header-logo:hover {
+    background-image: url("../img/nerds-logo-hover.png");
+}
+.main-navigation ul {
+    list-style: none;
+}
+.site-navigation a,
+.cart a {
+    line-height: 30px;
+    font-weight: 500;
+    color: #000000;
+    text-transform: uppercase;
+}
+.site-navigation a:focus,
+.cart a:focus {
+    color:#a6a6a6;
+}
+.site-navigation a:hover,
+.cart a:hover {
+    color: #fb565a;
+}  
+.services-list {
+    list-style: none;
+}
+.services-item {
+    text-align: left;
+}
+.services-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.services-item-promo {
+    line-height: 24px;
+}
+.services-item a{
+    display: block;
+    width: 160px;
+    
+    padding: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #ffffff;
+    background-color: #fb565a;
+    background-image: url("../img/btn-cite.png");
+    border-radius: 3px;
+} 
+a.services-item-app {
+    background-image: url("../img/btn-app.png")
+}
+a.services-item-presentetion {
+    background-image: url("../img/btn-promo.png")
+}
+.contacts-info p:nth-of-type(1){
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.button {
+    font: inherit;
+
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+   
+    background-color: #fb565a;
+    border: none;
+}
+.main-footer ul{
+    list-style: none;
+}
+ .main-footer b {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.main-footer p {
+    line-height: 22px; 
+    font-weight: 500;
+}
+.modal {
+    color: #000000;
+    background-color: #ffffff;
+}
+.to-write-item input {
+    font: inherit;
+    background-color: #ffffff;
+    border: 2px solid #d7dcde ;
+}
+.to-write-item input:hover {
+    border-color: #b4b9bb;
+}
+.to-write-item input:focus {
+    border-color: #000000;
+}
+.to-write-item input:invalid {
+    border-color: #e74246;
+}
+
+
+
+
+
+
+
