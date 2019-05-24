@@ -1,5 +1,6 @@
 body {
-     
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
@@ -8,18 +9,36 @@ body {
 
     background-color: #ffffff;    
 }
+.inner-page {
+    color: #000000;
+    background-color: #f9f6f3;
+ }
 a {
     text-decoration: none;
+}
+.button {
+    font: inherit;
+
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #fb565a;
+    border: none;
 }
 .main-header {
     background-color:#eeeeee;
 }
+
 .header-logo img {
     opacity: 0;
 }
 a.header-logo {
-    
+    display: block;
     background-image: url("../img/nerds-logo.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 a.header-logo:focus {
     background-image: url("../img/nerds-logo-focus.png");
@@ -44,7 +63,12 @@ a.header-logo:hover {
 .site-navigation a:hover,
 .cart a:hover {
     color: #fb565a;
-}  
+}
+.page-title {
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+} 
 .services-list {
     list-style: none;
 }
@@ -63,7 +87,6 @@ a.header-logo:hover {
 .services-item a{
     display: block;
     width: 160px;
-    
     padding: 18px;
     line-height: 18px;
     font-weight: 500;
@@ -81,29 +104,104 @@ a.services-item-app {
 a.services-item-presentetion {
     background-image: url("../img/btn-promo.png")
 }
-.contacts-info p:nth-of-type(1){
+
+.filter fieldset {
+    border: none;
+}
+.filter legend,
+.catalog-item-title {
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
-}
-.button {
-    font: inherit;
-
-    text-align: center;
-    color: #ffffff;
-    vertical-align: middle;
     text-transform: uppercase;
-   
-    background-color: #fb565a;
+}
+.filter ul {
+    list-style: none;
+    line-height: 20px;
+}
+.filter-input+label {
+    color: #283136;
+}
+.filter-input:disabled+label {
+    color: #e5e5e5;
+}
+.button-filtres.button {
+    display: block;
+    padding: 15px 20px;
+    width: 260px;
     border: none;
+    box-sizing: content-box;
+    background-color: #eeeeee;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font: inherit;
+}
+.button-filtres.button:hover  {
+    background-color: #dfdfdf;
+    
+}
+.button-filtres.button:focus {
+    background-color: #d5d5d5;
+    border: transparent;
+    color: #959595;
+}
+.catalog-list {
+    list-style: none;
+}
+.catalog-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.catalog-item a {
+    color: #000000;
+}
+.price {
+    color: #ffffff;
+    background-color: #fb565a;
+}
+.pagination-list {
+    list-style: none;
+}
+.pagination-item a {
+    list-style: none;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #eeeeee;
+}
+.pagination-item a:hover {
+    background-color: #dfdfdf;
+}
+.pagination-item a:focus {
+    color: #a9a9a9;
+    background-color: #d5d5d5;
+}
+.pagination-item-current a {
+    color: #000000;
+    background-color: #ffffff;
+}
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+    color: #000000;
+    background-color: #ffffff;
+}
+.brand {
+    line-height: 30px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
 }
 .main-footer ul{
     list-style: none;
 }
- .main-footer b {
+.main-footer  b  {
     font-size: 36px;
     line-height: 36px;
-    font-weight: 700;
+    font-weight: bold;
 }
 .main-footer p {
     line-height: 22px; 
@@ -111,22 +209,45 @@ a.services-item-presentetion {
 }
 .modal {
     color: #000000;
+
     background-color: #ffffff;
+    background-position: 0 0;
+    background-repeat: repeat;
 }
-.to-write-item input {
+.modal.message h3   {
+    font-size: 45px;
+    line-height: 45px;
+}
+.modal label {
+    font-weight: bold;
+}
+.message-form input[type="text"],
+.message-form input[type="email"]{
     font: inherit;
+    color:#000000;
+
     background-color: #ffffff;
     border: 2px solid #d7dcde ;
 }
-.to-write-item input:hover {
+.message-form :focus::-webkit-input-placeholder {
+    color: #444444;
+}
+.message-form input:hover {
+    color:#b4b9bb;
     border-color: #b4b9bb;
 }
-.to-write-item input:focus {
-    border-color: #000000;
+.message-form input:focus {
+    color:#444444;
+    border-color:#000000;
 }
-.to-write-item input:invalid {
+.message-form input:invalid {
+    color: #e74246;
     border-color: #e74246;
 }
+
+
+
+
 
 
 
