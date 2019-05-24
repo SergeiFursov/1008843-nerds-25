@@ -18,10 +18,7 @@ a {
 }
 .button {
     font: inherit;
-
-    text-align: center;
-    vertical-align: middle;
-    color: #ffffff;
+    font-weight: medium;
     text-transform: uppercase;
 
     background-color: #fb565a;
@@ -30,7 +27,6 @@ a {
 .main-header {
     background-color:#eeeeee;
 }
-
 .header-logo img {
     opacity: 0;
 }
@@ -68,11 +64,9 @@ a.header-logo:hover {
     font-size: 55px;
     line-height: 55px;
     text-align: center;
-} 
-.services-list {
-    list-style: none;
 }
 .services-item {
+    list-style: none;
     text-align: left;
 }
 .services-item h3 {
@@ -84,27 +78,42 @@ a.header-logo:hover {
 .services-item-promo {
     line-height: 24px;
 }
-.services-item a{
-    display: block;
-    width: 160px;
-    padding: 18px;
-    line-height: 18px;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
-    
+.services-item-web {
     color: #ffffff;
     background-color: #fb565a;
-    background-image: url("../img/btn-cite.png");
-    border-radius: 3px;
+}
+.services-item-web:hover {
+    color: #ffffff;
+    background-color: #e74246;
+}
+.services-item-web:focus {
+    color: #e37376;
+    background-color: #c13135;
+}
+.services-item-app {
+    color: #ffffff;
+    background-color: #00ca74;
+}
+.services-item-app:hover {
+    color: #ffffff;
+    background-color: #00bc6c;
+}
+.services-item-app:focus {
+    color: #4dc491;
+    background-color: #00aa62;
+}
+.services-item-presentetion {
+    color: #ffffff;
+    background-color:  #efc84a;
 } 
-a.services-item-app {
-    background-image: url("../img/btn-app.png")
+.services-item-presentetion:hover {
+    color: #ffffff;
+    background-color: #eab534;
 }
-a.services-item-presentetion {
-    background-image: url("../img/btn-promo.png")
+.services-item-presentetion:focus {
+    color: #edc265;
+    background-color: #e5a722;
 }
-
 .filter fieldset {
     border: none;
 }
@@ -195,8 +204,28 @@ a.services-item-presentetion {
     color: #000000;
     text-transform: uppercase;
 }
+.button.contacts-info {
+    color: #ffffff;
+    background-color: #fb565a;
+}
+.button.message {
+    color: #ffffff;
+    background-color: #fb565a;
+}
 .main-footer ul{
     list-style: none;
+}
+.social-button {
+    color: #ffffff;
+    background-color: #e1e1e1;
+}
+.social-button:hover {
+    color: #ffffff;
+    background-color: #e74246;
+}
+.social-button:focus {
+    color: #e37376;
+    background-color: #d7373b;
 }
 .main-footer  b  {
     font-size: 36px;
@@ -208,8 +237,6 @@ a.services-item-presentetion {
     font-weight: 500;
 }
 .modal {
-    color: #000000;
-
     background-color: #ffffff;
     background-position: 0 0;
     background-repeat: repeat;
