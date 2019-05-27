@@ -1,284 +1,324 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight:regular; 
-    color:#000000; 
-
-    background-color: #ffffff;    
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: regular;
+  color: #000000;
+  background-color: #ffffff;
 }
+
 .inner-page {
-    color: #000000;
-    background-color: #f9f6f3;
- }
+  color: #000000;
+  background-color: #f9f6f3;
+}
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 .button {
-    font: inherit;
-    font-weight: medium;
-    text-transform: uppercase;
-
-    background-color: #fb565a;
-    border: none;
+  font: inherit;
+  font-weight: medium;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
 }
+
 .main-header {
-    background-color:#eeeeee;
+  background-color: #eeeeee;
 }
+
 .header-logo img {
-    opacity: 0;
+  opacity: 0;
 }
+
 a.header-logo {
-    display: block;
-    background-image: url("../img/nerds-logo.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  display: block;
+  background-image: url("../img/nerds-logo.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
+
 a.header-logo:focus {
-    background-image: url("../img/nerds-logo-focus.png");
+  background-image: url("../img/nerds-logo-focus.png");
 }
+
 a.header-logo:hover {
-    background-image: url("../img/nerds-logo-hover.png");
+  background-image: url("../img/nerds-logo-hover.png");
+  cursor: pointer;
 }
+
 .main-navigation ul {
-    list-style: none;
+  list-style: none;
 }
-.site-navigation a,
-.cart a {
-    line-height: 30px;
-    font-weight: 500;
-    color: #000000;
-    text-transform: uppercase;
+
+.site-navigation a, .cart a {
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
 }
-.site-navigation a:focus,
-.cart a:focus {
-    color:#a6a6a6;
+
+.site-navigation a:focus, .cart a:focus {
+  color: #a6a6a6;
 }
-.site-navigation a:hover,
-.cart a:hover {
-    color: #fb565a;
+
+.site-navigation a:hover, .cart a:hover {
+  color: #fb565a;
+  cursor: pointer;
 }
+
 .page-title {
-    font-size: 55px;
-    line-height: 55px;
-    text-align: center;
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
 }
+
 .services-item {
-    list-style: none;
-    text-align: left;
+  list-style: none;
+  text-align: left;
 }
+
 .services-item h3 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
+
 .services-item-promo {
-    line-height: 24px;
+  line-height: 24px;
 }
+
 .services-item-web {
-    color: #ffffff;
-    background-color: #fb565a;
+  color: #ffffff;
+  background-color: #fb565a;
 }
+
 .services-item-web:hover {
-    color: #ffffff;
-    background-color: #e74246;
+  color: #ffffff;
+  background-color: #e74246;
+  cursor: pointer;
 }
+
 .services-item-web:focus {
-    color: #e37376;
-    background-color: #c13135;
+  color: #e37376;
+  background-color: #c13135;
 }
+
 .services-item-app {
-    color: #ffffff;
-    background-color: #00ca74;
+  color: #ffffff;
+  background-color: #00ca74;
 }
+
 .services-item-app:hover {
-    color: #ffffff;
-    background-color: #00bc6c;
+  color: #ffffff;
+  background-color: #00bc6c;
+  cursor: pointer;
 }
+
 .services-item-app:focus {
-    color: #4dc491;
-    background-color: #00aa62;
+  color: #4dc491;
+  background-color: #00aa62;
 }
+
 .services-item-presentetion {
-    color: #ffffff;
-    background-color:  #efc84a;
-} 
+  color: #ffffff;
+  background-color: #efc84a;
+}
+
 .services-item-presentetion:hover {
-    color: #ffffff;
-    background-color: #eab534;
+  color: #ffffff;
+  background-color: #eab534;
+  cursor: pointer;
 }
+
 .services-item-presentetion:focus {
-    color: #edc265;
-    background-color: #e5a722;
+  color: #edc265;
+  background-color: #e5a722;
 }
+
 .filter fieldset {
-    border: none;
+  border: none;
 }
-.filter legend,
-.catalog-item-title {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
+
+.filter legend, .catalog-item-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
+
 .filter ul {
-    list-style: none;
-    line-height: 20px;
+  list-style: none;
+  line-height: 20px;
 }
+
 .filter-input+label {
-    color: #283136;
+  color: #283136;
 }
+
 .filter-input:disabled+label {
-    color: #e5e5e5;
+  color: #e5e5e5;
 }
+
 .button-filtres.button {
-    display: block;
-    padding: 15px 20px;
-    width: 260px;
-    border: none;
-    box-sizing: content-box;
-    background-color: #eeeeee;
-    color: #000000;
-    text-align: center;
-    text-transform: uppercase;
-    font: inherit;
+  display: block;
+  padding: 15px 20px;
+  width: 260px;
+  border: none;
+  box-sizing: content-box;
+  background-color: #eeeeee;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  font: inherit;
 }
-.button-filtres.button:hover  {
-    background-color: #dfdfdf;
-    
+
+.button-filtres.button:hover {
+  background-color: #dfdfdf;
+  cursor: pointer;
 }
+
 .button-filtres.button:focus {
-    background-color: #d5d5d5;
-    border: transparent;
-    color: #959595;
+  background-color: #d5d5d5;
+  border: transparent;
+  color: #959595;
 }
+
 .catalog-list {
-    list-style: none;
+  list-style: none;
 }
+
 .catalog-item:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
+
 .catalog-item a {
-    color: #000000;
+  color: #000000;
 }
+
 .price {
-    color: #ffffff;
-    background-color: #fb565a;
+  color: #ffffff;
+  background-color: #fb565a;
 }
+
 .pagination-list {
-    list-style: none;
+  list-style: none;
 }
+
 .pagination-item a {
-    list-style: none;
-    font-size: 16px;
-    line-height: 18px;
-
-    color: #000000;
-    text-transform: uppercase;
-
-    background-color: #eeeeee;
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #eeeeee;
 }
+
 .pagination-item a:hover {
-    background-color: #dfdfdf;
+  background-color: #dfdfdf;
+  cursor: pointer;
 }
+
 .pagination-item a:focus {
-    color: #a9a9a9;
-    background-color: #d5d5d5;
+  color: #a9a9a9;
+  background-color: #d5d5d5;
 }
+
 .pagination-item-current a {
-    color: #000000;
-    background-color: #ffffff;
+  color: #000000;
+  background-color: #ffffff;
 }
+
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
-    color: #000000;
-    background-color: #ffffff;
+  color: #000000;
+  background-color: #ffffff;
+  cursor: pointer;
 }
+
 .brand {
-    line-height: 30px;
-    font-weight: bold;
-    color: #000000;
-    text-transform: uppercase;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
 }
+
 .button.contacts-info {
-    color: #ffffff;
-    background-color: #fb565a;
+  color: #ffffff;
+  background-color: #fb565a;
 }
+
 .button.message {
-    color: #ffffff;
-    background-color: #fb565a;
+  color: #ffffff;
+  background-color: #fb565a;
 }
-.main-footer ul{
-    list-style: none;
+
+.main-footer ul {
+  list-style: none;
 }
+
 .social-button {
-    color: #ffffff;
-    background-color: #e1e1e1;
+  color: #ffffff;
+  background-color: #e1e1e1;
 }
+
 .social-button:hover {
-    color: #ffffff;
-    background-color: #e74246;
+  color: #ffffff;
+  background-color: #e74246;
+  cursor: pointer;
 }
+
 .social-button:focus {
-    color: #e37376;
-    background-color: #d7373b;
+  color: #e37376;
+  background-color: #d7373b;
 }
-.main-footer  b  {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: bold;
+
+.main-footer b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
 }
+
 .main-footer p {
-    line-height: 22px; 
-    font-weight: 500;
+  line-height: 22px;
+  font-weight: 500;
 }
+
 .modal {
-    background-color: #ffffff;
-    background-position: 0 0;
-    background-repeat: repeat;
+  background-color: #ffffff;
+  background-position: 0 0;
+  background-repeat: repeat;
 }
-.modal.message h3   {
-    font-size: 45px;
-    line-height: 45px;
+
+.modal.message h3 {
+  font-size: 45px;
+  line-height: 45px;
 }
+
 .modal label {
-    font-weight: bold;
+  font-weight: bold;
 }
+
 .message-form input[type="text"],
-.message-form input[type="email"]{
-    font: inherit;
-    color:#000000;
+.message-form input[type="email"] {
+  font: inherit;
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #d7dcde;
+}
 
-    background-color: #ffffff;
-    border: 2px solid #d7dcde ;
+.message-form:focus::-webkit-input-placeholder {
+  color: #444444;
 }
-.message-form :focus::-webkit-input-placeholder {
-    color: #444444;
-}
+
 .message-form input:hover {
-    color:#b4b9bb;
-    border-color: #b4b9bb;
+  color: #b4b9bb;
+  border-color: #b4b9bb;
+  cursor: pointer;
 }
-.message-form input:focus {
-    color:#444444;
-    border-color:#000000;
-}
-.message-form input:invalid {
-    color: #e74246;
-    border-color: #e74246;
-}
-
-
-
-
-
-
-
-
-
-
-
