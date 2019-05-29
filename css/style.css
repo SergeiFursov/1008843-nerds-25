@@ -54,7 +54,7 @@ a.header-logo:hover {
   list-style: none;
 }
 
-.site-navigation a, .cart a {
+.site-navigation a, .user-cart a {
   line-height: 30px;
   font-weight: 500;
   color: #000000;
@@ -234,9 +234,7 @@ a.header-logo:hover {
   background-color: #ffffff;
 }
 
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
+.pagination-item-current a:hover, .pagination-item-current a:focus, .pagination-item-current a:active {
   color: #000000;
   background-color: #ffffff;
   cursor: pointer;
@@ -296,6 +294,10 @@ a.header-logo:hover {
   background-repeat: repeat;
 }
 
+.modal.message {
+  background-color: #ffffff;
+}
+
 .modal.message h3 {
   font-size: 45px;
   line-height: 45px;
@@ -305,8 +307,7 @@ a.header-logo:hover {
   font-weight: bold;
 }
 
-.message-form input[type="text"],
-.message-form input[type="email"] {
+.message-form input[type="text"], .message-form input[type="email"] {
   font: inherit;
   color: #000000;
   background-color: #ffffff;
@@ -322,3 +323,134 @@ a.header-logo:hover {
   border-color: #b4b9bb;
   cursor: pointer;
 }
+
+/* Сеточные стили */
+
+html, body {
+  min-width: 1440px;
+  min-height: 2476px;
+}
+
+.conteiner {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Временно для стилей */
+
+.main-header {
+  margin-bottom: 80px;
+  height: 545px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 132px;
+}
+
+.header-logo {
+  width: 160px;
+  height: 65px;
+  /* Временно */
+  /*display: block;*/
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.main-navigation-wrapper .conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  width: 440px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.user-cart {
+  width: 160px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.services-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.services-item {
+  width: 300px;
+  margin-right: 100px;
+  margin-bottom: 80px;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 54px;
+}
+
+.studio-design {
+  width: 660px;
+  min-height: 409px;
+}
+
+.illustration {
+  width: 360px;
+  height: 409px;
+}
+
+.order-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.order-items {
+  padding-left: 25px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.banner .logo-list {
+  margin: 0px;
+  padding: 44px 0px;
+  list-style: none;
+}
+
+.main-footer {
+  padding: 70px 0;
+}
+
+.main-footer .conteiner {
+  display: flex;
+}
+
+.social-footer {
+  margin: 0px;
+  width: 260px;
+  margin: 0;
+  padding-right: 135px;
+}
+
+
+.losung-footer {
+  width: 560px;
+  margin: 0px;
+}
+
