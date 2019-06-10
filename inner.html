@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
 </head>
@@ -29,17 +29,30 @@
         </div>
       </div>
     </nav>
-    <h1 class="main-header-title">Магазин готовых шаблонов</h1>
+    <h1 class="header-title">Магазин готовых шаблонов</h1>
   </header>
   <main class="conteiner">
-
     <div class="catalog-columns">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр макетов сайтов</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-
-
-          <fieldset>
+          <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="range-price">
+                <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="filter-item">
             <legend>Сетка:</legend>
             <ul>
               <li class="filter-option">
@@ -59,9 +72,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-item">
             <legend>Особенности:</legend>
-            <ul>
+            <ul class="filter-features">
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Слайдер"
                   id="filter-slider" checked />
@@ -91,10 +104,18 @@
           </fieldset>
           <button type="submit" class="button button-filters">Показать</button>
         </form>
-
       </section>
       <article class="catalog">
         <h2 class="visually-hidden">Макеты готовых сайтов</h2>
+        <div class="sort">
+          <span class="title-sort">Сортировать:</span>
+          <span class="active">По цене</span>
+          <span>По типу</span>
+          <span>По названию</span>
+          <span class="up"></span>
+          <span class="down current"></span>
+        </div>
+
         <ul class="catalog-list">
           <li class="catalog-item sedona">
             <div class="cite promo-sedona">
@@ -136,7 +157,7 @@
             <div class="cite promo-aplus">
               <div class="details">
                 <a class="button-cite" href="#">A Plus</a>
-                <p class="info-item">Лендинг курсов повышения  квалификации</p>
+                <p class="info-item">Лендинг курсов повышения квалификации</p>
                 <button class="price" type="submit">9 900 руб.</button>
               </div>
             </div>
@@ -158,62 +179,27 @@
           <li class="pagination-item "><a href="#">Следующая</a></li>
         </ul>
       </article>
-    </div>
-
-    <div class="modal-conteiner">
-      <section class="modal">
-        <div class="modal-message">
-          <h3>Напишите нам</h3>
-          <form class="message-form" action="index.html" method="get" id="message">
-            <p class="form-items">
-              <label for="user-name">Ваше имя:</label>
-              <input type="text" name="name" placeholder="Имя Фамилия" id="user-name" />
-            </p>
-            <p class="form-items">
-              <label for="user-e-mail">Ваш e-mail:</label>
-              <input type="email" name="e-mail" placeholder="email@example.com" id="user-e-mail" />
-            </p>
-            <p class="form-items">
-              <label for="user-message">Текст письма:</label>
-              <input type="text" name="message" placeholder="В свободной форме" id="user-message" />
-            </p>
-          </form>
-          <button class="button message" type="submit">Отправить</button>
-        </div>
-      </section>
-    </div>
-
-
-    
   </main>
   <footer class="main-footer">
-    <div class="conteiner">
-      <section class="contact-info">
-        <h3 class="visually-hidden">Контактная информация</h3>
-        <p class="contact-title">Nёrds design studio</p>
-        <p class="contact-item">
-          191186, Санкт-Петербург,<br />
-          ул. Б. Конюшенная, д. 19/8<br />
-        </p>
-        <p class="contact-item">
-          тел. +7(812) 275-75-75
-        </p>
-        <p><button type="submit" class="button-contact-info" form="message">Напишите нам</button>
-        </p>
-
-      </section>
-    </div>
-    <section class="adress-map">
+    <section class="contact-info">
+      <h3 class="visually-hidden">Контактная информация</h3>
+      <p class="contact-title">Nёrds design studio</p>
+      <span class="contact-adress">
+        <p>191186, Санкт-Петербург,</br>
+           ул. Б. Конюшенная, д. 19/8</br></p>
+        <p>тел. +7(812) 275-75-75</p>
+      </span>
+      <a class="link-write-us" href="#">Напишите нам</a>
+    </section>
+    <div class="adress-map">
       <h2 class="visually-hidden">Адрес Дизайн-студии Нёрдс</h2>
       <p>
-        <img src="img/map.png" alt="191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел. +7 (" />
+        <img src="img/map.png" alt="191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел. +7" />
       </p>
-      <div class="map-marker">
-        <div class="marker">Место на карте</div>
-      </div>
-    </section>
-    <div class="social-footer">
-      <div class="conteiner">
+      <div class="marker">Место на карте</div>
+    </div>
+    <div class="conteiner">
+      <div class="social-footer">
         <ul>
           <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span><svg version="1.1"
                 id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -244,11 +230,53 @@
                   d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z"
                   fill="#fff" /></svg></a></li>
         </ul>
-        <b>Давайте дружить, это выгодно</b>
-        <p>Скидка 10% для друзей из социальных сетей</p>
+        <div class="slogan">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </div>
       </div>
     </div>
   </footer>
+  <section class="modal modal-message">
+    <h3 class="message-title ">Напишите нам</h3>
+    <button class="close-cross" type="button" name="close"></button>
+    <form class="message-form" action="index.html" method="get" id="message">
+      <p class="message-items">
+        <label for="user-name">Ваше имя:</label>
+        <input type="text" name="name" placeholder="Имя Фамилия" id="user-name" />
+      </p>
+      <p class="message-items">
+        <label for="user-e-mail">Ваш e-mail:</label>
+        <input type="email" name="e-mail" placeholder="email@example.com" id="user-e-mail" />
+      </p>
+      <p class="message-items">
+        <label for="user-message">Текст письма:</label>
+        <input type="text" name="message" placeholder="В свободной форме" id="user-message" />
+      </p>
+    </form>
+    <button class="button message" type="submit">Отправить</button>
+
+    <script>
+
+      var link = document.querySelector(".link-write-us");
+      var popup = document.querySelector(".modal-message");
+      var close = document.querySelector(".close-cross");
+
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+      })
+
+    </script>
+
+
+  </section>
 </body>
 
 </html>
