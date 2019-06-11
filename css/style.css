@@ -59,6 +59,7 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+  outline: none;
 }
 
 .header-logo img {
@@ -1160,6 +1161,7 @@ a.header-logo:focus {
   padding: 11px 0 14px 13px;
   line-height: 18px;
   border-radius: 3px;
+  outline: none;
 }
 
 .message-items:last-child input {
@@ -1213,8 +1215,9 @@ a.header-logo:focus {
   top: 86px;
   right: 88px;
   font-size: 0;
-  border: 0;
   background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 .close-cross::before, .close-cross::after {
@@ -1225,7 +1228,7 @@ a.header-logo:focus {
   left: -5px;
   width: 26px;
   height: 4px;
-  border: none;
+
   background-color: #fecccd;
 }
 
