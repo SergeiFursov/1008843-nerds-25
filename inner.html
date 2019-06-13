@@ -109,7 +109,7 @@
         <h2 class="visually-hidden">Макеты готовых сайтов</h2>
         <div class="sort">
           <span class="title-sort">Сортировать:</span>
-          <span class="active">По цене</span>
+          <span class="current">По цене</span>
           <span>По типу</span>
           <span>По названию</span>
           <span class="up"></span>
@@ -179,16 +179,18 @@
           <li class="pagination-item "><a href="#">Следующая</a></li>
         </ul>
       </article>
+    </div>
   </main>
   <footer class="main-footer">
     <section class="contact-info">
       <h3 class="visually-hidden">Контактная информация</h3>
       <p class="contact-title">Nёrds design studio</p>
-      <span class="contact-adress">
-        <p>191186, Санкт-Петербург,</br>
-           ул. Б. Конюшенная, д. 19/8</br></p>
+
+        <p class="contact-adress">191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8
+        </p>
         <p>тел. +7(812) 275-75-75</p>
-      </span>
+      
       <a class="link-write-us" href="#">Напишите нам</a>
     </section>
     <div class="adress-map">
@@ -255,13 +257,11 @@
       </p>
     </form>
     <button class="button message" type="submit">Отправить</button>
-
     <script>
 
       var link = document.querySelector(".link-write-us");
       var popup = document.querySelector(".modal-message");
       var close = document.querySelector(".close-cross");
-
 
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
@@ -274,8 +274,6 @@
       })
 
     </script>
-
-
   </section>
 </body>
 
