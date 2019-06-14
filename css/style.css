@@ -968,6 +968,7 @@ a.header-logo:focus {
   background-color: #fb565a;
   border-radius: 2px;
   border: none;
+  outline: none;
   text-transform: uppercase;
 }
 
