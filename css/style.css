@@ -685,7 +685,7 @@ a.header-logo:focus {
   margin: 0;
   padding: 0;
   margin-top: 3px;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   color: #dadada;
   font-size: 14px;
   text-transform: uppercase;
@@ -995,7 +995,7 @@ a.header-logo:focus {
   display: flex;
   margin: 0px;
   padding: 0px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   list-style: none;
 }
 
@@ -1090,11 +1090,14 @@ a.header-logo:focus {
   padding-top: 35px;
   padding-left: 50px;
   background-color: #ffffff;
+  z-index: 2;
 }
 
 .inner-page .contact-info {
   top: 2626px;
   left: 140px;
+
+  z-index: 2;
 }
 
 .contact-title {
@@ -1125,12 +1128,12 @@ a.header-logo:focus {
   position: absolute;
   margin: 0;
   padding: 0;
-  width: 960px;
-  height: 522px;
+
   background-color: #ffffff;
   background-image: url(../img/white-back.png);
   background-position: 0 0;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.7);
+  z-index: 10;
 }
 
 .inner-page .modal-message {
@@ -1148,8 +1151,30 @@ a.header-logo:focus {
   padding: 67px 100px 0 100px;
 }
 
+@keyframes stretching {
+  0%,
+  25% {
+    opacity: 0.1;
+    transform: translateX(-1000px);
+  }
+  25%,
+  50% {
+    transform: translateX(250px);
+    opacity: 0.4;
+  }
+  50%,
+  75% {
+    transform: translateX(150px);
+    opacity: 0.6;
+  }
+}
+
 .modal-show {
   display: block;
+  animation-name: stretching;
+  animation-duration: 2.5s;
+  animation-timing-function: transform 1.6s cubic-bezier(0.47, 0, 0.745, 0.715);
+
 }
 
 .message-title {
@@ -1213,14 +1238,16 @@ a.header-logo:focus {
   border: none;
 }
 
-.message-form input[type="text"], .message-form input[type="email"] {
+.message-form input[type="text"],
+.message-form input[type="email"] {
   font: inherit;
   color: #000000;
   background-color: #ffffff;
   border: 2px solid #d7dcde;
 }
 
-.message-form input:focus[type="text"], .message-form input:focus[type="email"] {
+.message-form input:focus[type="text"],
+.message-form input:focus[type="email"] {
   color: #444444;
   border: 2px solid #000000;
 }
@@ -1231,7 +1258,8 @@ a.header-logo:focus {
   cursor: pointer;
 }
 
-.message-form input:invalid[type="text"], .message-form input:invalid[type="email"] {
+.message-form input:invalid[type="text"],
+.message-form input:invalid[type="email"] {
   color: #ed7477;
   background-color: #ffffff;
   border: 2px solid #e74246;
@@ -1357,7 +1385,17 @@ a.header-logo:focus {
   fill: #e37376;
 }
 
-.marker {
+.modal-map iframe {
+  position: relative;
+  border: none;
+}
+
+.modal-map .close-cross {
+  top: -20px;
+  right: 100px;
+}
+
+.button-map-marker {
   position: absolute;
   display: block;
   left: 820px;
@@ -1365,10 +1403,10 @@ a.header-logo:focus {
   font-size: 0;
   width: 231px;
   height: 190px;
-  background-image: url(../img/map-marker.png)
+  z-index: 2;
 }
 
-.inner-page .marker {
+.inner-page .button-map-marker {
   position: absolute;
   display: block;
   left: 820px;
@@ -1376,7 +1414,7 @@ a.header-logo:focus {
   font-size: 0;
   width: 231px;
   height: 190px;
-  background-image: url(../img/map-marker.png)
+  z-index: 1;
 }
 
 input[type="checkbox"]:checked, input[type="checkbox"]:not(:checked), input[type="radio"]:checked, input[type="radio"]:not(:checked) {

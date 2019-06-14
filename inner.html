@@ -115,7 +115,7 @@
           <span class="up"></span>
           <span class="down current"></span>
         </div>
-
+        <section >
         <ul class="catalog-list">
           <li class="catalog-item sedona">
             <div class="cite promo-sedona">
@@ -172,6 +172,7 @@
             </div>
           </li>
         </ul>
+      </section>
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
@@ -186,20 +187,24 @@
       <h3 class="visually-hidden">Контактная информация</h3>
       <p class="contact-title">Nёrds design studio</p>
 
-        <p class="contact-adress">191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p>тел. +7(812) 275-75-75</p>
-      
+      <p class="contact-adress">191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8
+      </p>
+      <p>тел. +7(812) 275-75-75</p>
+
       <a class="link-write-us" href="#">Напишите нам</a>
     </section>
-    <div class="adress-map">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Адрес Дизайн-студии Нёрдс</h2>
-      <p>
-        <img src="img/map.png" alt="191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел. +7" />
-      </p>
-      <div class="marker">Место на карте</div>
-    </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1560508803249!5m2!1sru!2sru"
+        width="1440" height="416"  style="border:0" allowfullscreen></iframe>
+      <button class="close-cross" type="button" name="close"></button>
+    </section>
+    <p><img src="img/map.png" alt="191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел. +7" width="1440"
+        height="416" />
+    </p>
+    <a class="button-map-marker" href="#"><img src="img/map-marker.png" width="231" height="190" alt="Нердс"></a>
     <div class="conteiner">
       <div class="social-footer">
         <ul>
@@ -245,7 +250,7 @@
     <form class="message-form" action="index.html" method="get" id="message">
       <p class="message-items">
         <label for="user-name">Ваше имя:</label>
-        <input type="text" name="name" placeholder="Имя Фамилия" id="user-name" />
+        <input type="text" name="login" placeholder="Имя Фамилия" id="user-name" />
       </p>
       <p class="message-items">
         <label for="user-e-mail">Ваш e-mail:</label>
@@ -257,24 +262,40 @@
       </p>
     </form>
     <button class="button message" type="submit">Отправить</button>
-    <script>
 
-      var link = document.querySelector(".link-write-us");
-      var popup = document.querySelector(".modal-message");
-      var close = document.querySelector(".close-cross");
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-      });
-
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-      })
-
-    </script>
   </section>
+  <script>
+    var link = document.querySelector(".link-write-us");
+    var popup = document.querySelector(".modal-message");
+    var close = popup.querySelector(".close-cross");
+    var login = popup.querySelector("[name=login]");
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+      login.focus();
+    });
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+    });
+
+    var mapLink = document.querySelector(".button-map-marker");
+    var mapPopup = document.querySelector(".modal-map");
+    var mapClose = mapPopup.querySelector(".close-cross");
+
+    mapLink.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.add("modal-show");
+    });
+
+    mapClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
+    });
+
+  </script>
 </body>
 
 </html>
