@@ -1057,13 +1057,13 @@ a.header-logo:focus {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  list-style: none;
-  background-color: red
+  list-style: none
+
 }
 
 .catalog-item {
   position: relative;
-  
+
   width: 360px;
   height: 576px;
   margin: 33px 0 40px;
