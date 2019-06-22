@@ -386,7 +386,9 @@ a.header-logo:focus {
 .services {
   border-bottom: 2px solid #eee;
   padding-bottom: 77px;
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   width: 100%
 }
 
@@ -1058,12 +1060,10 @@ a.header-logo:focus {
   margin: 0;
   padding: 0;
   list-style: none
-
 }
 
 .catalog-item {
   position: relative;
-
   width: 360px;
   height: 576px;
   margin: 33px 0 40px;
@@ -1247,16 +1247,17 @@ a.header-logo:focus {
   margin: 5px 0 80px;
   list-style: none;
   border-top: 2px solid #eee;
-  border-bottom: 2px solid #eee
+  border-bottom: 2px solid #eee;
 }
 
 .logo-list a {
-  width: 296px;
   display: block;
+  width: 296px;
   margin: 0;
   padding-top: 10px;
   text-align: center;
-  opacity: .2
+  opacity: .2;
+
 }
 
 .logo:hover {
